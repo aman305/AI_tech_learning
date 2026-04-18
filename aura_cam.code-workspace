@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../auracam/aura_cam"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Infotainment_Audi"
+		},
+		{
+			"path": "../../hmi_vhal_automation"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

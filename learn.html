@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Learning Setup</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="wizard">
+
+<h2>Build Your Learning Path</h2>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+<p id="progressText">Step 1 of 4</p>
+
+
+<div class="step active" id="step1">
+
+<h3>Choose Your Field</h3>
+
+<div class="option" onclick="selectOption(this,'field')">Software Development</div>
+<div class="option" onclick="selectOption(this,'field')">QA / Testing</div>
+<div class="option" onclick="selectOption(this,'field')">Data & AI</div>
+<div class="option" onclick="selectOption(this,'field')">DevOps</div>
+
+<button onclick="nextStep(1)">Next</button>
+
+</div>
+
+
+<div class="step" id="step2">
+
+<h3>Choose Technology</h3>
+
+<select id="tech"></select>
+
+<button onclick="previousStep(2)">Previous</button>
+<button onclick="nextStep(2)">Next</button>
+
+</div>
+
+
+<div class="step" id="step3">
+
+<h3>Choose Level</h3>
+
+<div class="option" onclick="selectOption(this,'level')">Beginner</div>
+<div class="option" onclick="selectOption(this,'level')">Intermediate</div>
+<div class="option" onclick="selectOption(this,'level')">Advanced</div>
+
+<button onclick="previousStep(3)">Previous</button>
+<button onclick="nextStep(3)">Next</button>
+
+</div>
+
+
+<div class="step" id="step4">
+
+<h3>Learning Mode</h3>
+
+<div class="option" onclick="selectOption(this,'mode')">Guided Lessons</div>
+<div class="option" onclick="selectOption(this,'mode')">Practice Mode</div>
+<div class="option" onclick="selectOption(this,'mode')">Interview Prep</div>
+
+<button onclick="previousStep(4)">Previous</button>
+<button onclick="startLearning()">Start Learning</button>
+
+</div>
+
+</div>
+
+<script src="wizard.js"></script>
+
+</body>
+</html>
